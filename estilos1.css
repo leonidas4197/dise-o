@@ -1,0 +1,76 @@
+/* estilos.css */
+
+/* Estilos globales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+header nav ul li {
+    margin: 0;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+.introduccion {
+    margin-bottom: 20px;
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+.galeria {
+    background-color: #e0e0e0;
+    padding: 10px;
+}
+
+.galeria .imagenes {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+.galeria img {
+    width: 200px;
+    height: auto;
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Diseño responsivo */
+@media (max-width: 600px) {
+    .galeria .imagenes {
+        flex-direction: column;
+        align-items: center;
+    }
+}
